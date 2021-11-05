@@ -49,4 +49,4 @@ Pre - processing includes:
  Naive bayes is used to train the model
  data is splitted into train & test using train_test_split from sklearn
 # Accuracy
- Naive Bayes(On 10000 tweets): 53%
+ Naive Bayes(On 2000 tweets): 53%
