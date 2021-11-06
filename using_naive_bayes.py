@@ -95,7 +95,8 @@ def callmodel1(text):
    print(pred_percent_for_all)
    return emotion,max,pred_percent_for_all
 
-text = input("text here")
+text_data = input("text here")
+text = cleaning(text_data)
 in_text = []
 in_text.append(text)
 output=callmodel1(in_text)
