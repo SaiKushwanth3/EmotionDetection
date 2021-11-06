@@ -22,19 +22,24 @@ def send():
         x = list(statement.keys())
         y = list(statement.values())
         plt.figure(figsize=(30,20))
-        plt.bar(x,y,width=0.7,color="#FBF925")
+        plt.bar(x,y,width=0.7,color="#0BE7CA")
         plt.show()
         text_area.config(foreground="#442265", font=("Verdana", 12 ))
         text_area.config(state=DISABLED)
         text_area.yview(END)
-    
+def clean():
+    EntryBox.delete('1.0', END)
 
 #create window
-text_area = Text(base, bd=1, bg="#F4D03F", font="Serif")
+text_area = Text(base, bd=1, bg="#F4D03F", font="Serif",)
 EntryBox = Text(base, bd=1, bg="white", font="Serif", fg="#2E4053")
+EntryBox.insert(END, "Text Your FeedBack Here")
 senbutton=Button(base,font=("verdana", 12,'bold'),text="Analyze",bd=0, bg="#E67E22"
                  , activebackground="#F39C12", fg='white',command=send)
-text_area.place(x=6,y=10, height=202, width=588)
-EntryBox.place(x=6,y=218, height=200,width=580)
-senbutton.place(x=250,y=425, height=50, width=100)
+w = Label(base, text="\t\tText your Feedback Here\t\t")
+text_area.place(x=6,y=10, height=202, width=580)
+w.place(x=145,y=210)
+EntryBox.place(x=6,y=232, height=200,width=580)
+senbutton.place(x=250,y=435, height=50, width=100)
+clean()
 base.mainloop()
