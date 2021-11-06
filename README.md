@@ -1,4 +1,4 @@
-# EmotionDetection
+# EmotionDetection from textual comments and feedback
 # Objective
 Aim is to make machines understand and detect emotions from any textual input. A text based emotion recognition system which give an overall sentiment of the sentence/paragraph in terms of the overall emotion.
 
