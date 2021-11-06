@@ -23,7 +23,7 @@ def send():
         x = list(statement.keys())
         y = list(statement.values())
         plt.figure(figsize=(30,20))
-        plt.bar(x,y,width=0.7,color="#0BE7CA")
+        plt.bar(x,y,width=0.7,color="#FBF925")
         plt.show()
         text_area.config(foreground="#442265", font=("Verdana", 12 ))
         text_area.config(state=DISABLED)
