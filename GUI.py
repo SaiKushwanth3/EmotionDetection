@@ -19,13 +19,13 @@ def send():
         emotion = output[0]
         statement=output[2]
         maxim = output[1]
-        text_area.insert(END, "EMOTION" + emotion[0] + '\t\t'+"strength:"+ maxim+'\n\n')
+        text_area.insert(END, "\n\n\t  EMOTION" + emotion[0] + '\n\n\t  '+"strength:"+ maxim+'\n\n')
         x = list(statement.keys())
         y = list(statement.values())
         plt.figure(figsize=(30,20))
         plt.bar(x,y,width=0.7,color="#0BE7CA")
         plt.show()
-        text_area.config(foreground="#442265", font=("Verdana", 12 ))
+        text_area.config(foreground="#442265", font=("Serif", 18 ))
         text_area.config(state=DISABLED)
         text_area.yview(END)
 def clean():
