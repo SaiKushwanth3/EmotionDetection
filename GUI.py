@@ -31,8 +31,8 @@ def send():
     
 
 #create window
-text_area = Text(base, bd=1, bg="white", font="Serif",)
-EntryBox = Text(base, bd=1, bg="#F4D03F", font="Serif", fg="#2E4053")
+text_area = Text(base, bd=1, bg="#F4D03F", font="Serif")
+EntryBox = Text(base, bd=1, bg="white", font="Serif", fg="#2E4053")
 senbutton=Button(base,font=("verdana", 12,'bold'),text="Analyze",bd=0, bg="#E67E22"
                  , activebackground="#F39C12", fg='white',command=send)
 text_area.place(x=6,y=6, height=252, width=588)
