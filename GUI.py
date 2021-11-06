@@ -11,8 +11,9 @@ def send():
     msg = EntryBox.get("1.0",'end-1c').strip()
     if msg != '':
         msg=msg.lower()
+        msg_data = cleaning(msg)
         in_text = []
-        in_text.append(msg)
+        in_text.append(msg_data)
         text_area.config(state=NORMAL)
         output=callmodel1(in_text)
         emotion = output[0]
