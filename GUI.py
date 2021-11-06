@@ -9,7 +9,6 @@ base.resizable(width=False, height=False)
 
 def send():
     msg = EntryBox.get("1.0",'end-1c').strip()
-    EntryBox.delete("0.0",END)
     if msg != '':
         msg=msg.lower()
         in_text = []
@@ -35,7 +34,7 @@ text_area = Text(base, bd=1, bg="#F4D03F", font="Serif")
 EntryBox = Text(base, bd=1, bg="white", font="Serif", fg="#2E4053")
 senbutton=Button(base,font=("verdana", 12,'bold'),text="Analyze",bd=0, bg="#E67E22"
                  , activebackground="#F39C12", fg='white',command=send)
-text_area.place(x=6,y=6, height=252, width=588)
-EntryBox.place(x=6,y=268, height=150,width=580)
+text_area.place(x=6,y=10, height=202, width=588)
+EntryBox.place(x=6,y=218, height=200,width=580)
 senbutton.place(x=250,y=425, height=50, width=100)
 base.mainloop()
